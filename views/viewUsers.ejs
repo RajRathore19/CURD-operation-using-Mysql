@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <hr>
+        <a href="/admin">Home</a> |
+        <a href="/admin/viewAllUsers">View Users</a> |
+        <a href="/signout">Logout</a>
+        <hr>
+
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>password</th>
+            <th>address</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    <%userData.forEach((obj)=>{%>
+        <tr>
+            <td><%=obj.username%></td>
+            <td><%=obj.email%></td>
+            <td><%=obj.password%></td>
+            <td><%=obj.address%></td>
+            <td><a href="/admin/updateUser?email=<%=obj.email%>">Update</a></td>
+            <td><a href="/admin/deleteUser?email=<%=obj.email%>">Delete</a></td>
+        </tr>
+    <%})%>
+   
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <center><h1>Express with mysql</h1> 
+    <hr>
+    <a href="/user/login">Login</a> |
+    <a href="/user/register">Register</a>
+    <hr>
+  <form action="/user/register" method="post">
+    <table align="center">
+        <caption>
+            <h2>Registration Form</h2>
+        </caption>
+        <tr>
+            <td>
+                <label for="username">Username</label>
+            </td>
+            <td>
+                <input type="text" placeholder="Enter Username" name="username" id="username">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input type="email" placeholder="Enter Email" name="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Password</label>
+            </td>
+            <td>
+                <input type="password" placeholder="Enter Password" name="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="address">Address</label>
+            </td>
+            <td>
+                <textarea name="address" id="address" rows="3" cols="39" placeholder="Enter Address"></textarea>
+            </td>
+        </tr>
+       
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Registration"><br>
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>    
+</form>
+
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <center><h1>Express with mysql</h1> 
+    <hr>
+    <a href="/user/login">Login</a> |
+    <a href="/user/register">Register</a> |
+    <a href="/admin">Admin</a>
+    <hr>
+  <form action="/user/login" method="post">
+    <table align="center">
+        <caption>
+            <h2>Login Form</h2>
+        </caption>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input type="email" placeholder="Enter Email" name="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Password</label>
+            </td>
+            <td>
+                <input type="password" placeholder="Enter Password" name="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Login"><br>
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>    
+</form>
+<span style="color:red"><center><%=message%></center></span>
+    
+</body>
+</html>
